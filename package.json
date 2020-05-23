@@ -1,0 +1,37 @@
+{
+  "name": "foundry-genesys",
+  "version": "1.0.0-alpha.0",
+  "author": "S. P. O. Clayton <sean@seanclayton.me>",
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.10.7",
+    "rollup-plugin-copy2": "^0.2.0",
+    "rollup-plugin-terser": "^5.3.0",
+    "rollup-plugin-zip": "^1.0.1",
+    "terser": "^4.7.0"
+  },
+  "keywords": [
+    "Foundry",
+    "FoundryVTT",
+    "Genesys",
+    "Gensys RPG"
+  ],
+  "license": "0BSD",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sean-clayton/foundry-genesys.git"
+  },
+  "scripts": {
+    "_clear": "rimraf dist/** *.zip",
+    "_make_bundle": "rollup -c",
+    "build": "run-s _clear _make_bundle",
+    "clean": "bsb -clean-world",
+    "start": "bsb -make-world -w"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}

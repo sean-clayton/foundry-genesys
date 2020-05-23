@@ -1,0 +1,49 @@
+{
+  "Actor": {
+    "types": ["character", "adversary", "npc"],
+    "templates": {
+      "common": {
+        "info": {
+          "archetype": "",
+          "career": ""
+        },
+        "attributes": {
+          "wounds": {
+            "threshold": 10,
+            "current": 0
+          },
+          "strain": {
+            "threshold": 10,
+            "current": 0
+          }
+        },
+        "characteristics": {
+          "brawn": 2,
+          "agility": 2,
+          "intellect": 2,
+          "cunning": 2,
+          "willpower": 2,
+          "presence": 2
+        }
+      }
+    }
+  },
+  "Item": {
+    "types": [
+      "archetype",
+      "career",
+      "skill",
+      "talent",
+      "armor",
+      "weapon",
+      "gear"
+    ],
+    "description": {
+      "description": {
+        "value": "",
+        "chat": "",
+        "source": ""
+      }
+    }
+  }
+}
